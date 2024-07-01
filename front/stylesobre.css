@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e1ece4;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#res, #resP {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Adiciona um pouco de espaço entre os campos */
+label + input[type="text"], label + button {
+  margin-top: 10px;
+}
+
+/* Adiciona um título para cada seção */
+h1 + label {
+  margin-top: 20px;
+}
+
+/* Adiciona um pouco de espaço entre as seções */
+h1 + h1 {
+  margin-top: 40px;
+}
+
+/*cabeçalho*/
+header {
+  background: linear-gradient( rgb(77, 192, 144),rgb(55, 185, 131),rgb(55, 160, 116));
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav li {
+  margin-right: 3px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #ccc;
+}
+
+header h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+/*rodape*/
+
+footer {
+  background: linear-gradient( rgb(77, 192, 144),rgb(55, 185, 131),rgb(55, 160, 116));
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ccc;
+}
