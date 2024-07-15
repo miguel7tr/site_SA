@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="scriptBusca.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Buscar</title>
+  
+</head>
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<body>
+  <header> 
+    <br>
+    <nav>
+      <ul>
+        <li><a class="linkCad" href="cadastro.html#cadastroFuncionario">Cadastrar</a><br></li>
+        <li><a class="linkCad" href="listar.html">Listar</a><br></li>
+        <li><a class="linkCad" href="buscar.html">Buscar</a></li>
+        <li><a class="linkCad" href="apagar.html">Apagar</a></li>
+        <li><a class="linkCad" href="estoque.html#buscarEstoque">Estoque</a></li>
+
+      </ul>
+    </nav>
+    <br>
+
+  </header>
+
+  <br>
+
+  <div class="container" id="container">
+    <a class="links" id="paraCadastroFuncionario"></a>
+    <a class="links" id="paraCadastroDoador"></a>
+    <a class="links" id="paraCadastroFabricante"></a>
+    <a class="links" id="paraCadastroProduto"></a>
+
+  <div class="content">      
+          
+       
+      <div class="buscarTudo">
+            <h1>Buscar</h1>
+
+            
+            <label for="codFuncionario">Código Funcionário:</label>
+          <input type="text" id="codFuncionario" placeholder="Código Funcionário: ">
+              <button type="submit" id="consultarFunc">Buscar Funcionário</button> 
+              <br>
+              <div id="respConsultarFunc"></div> <br>
+
+            
+              <label for="codDoador">Código Doador:</label>
+          <input type="text" id="codDoador" placeholder="Código Doador: ">
+              <button type="submit" id="consultarD">Buscar Doador</button> 
+              <br>
+              <div id="respConsultarD"></div> <br>
+
+            
+              <label for="codFabricante">Código Fabricante:</label>
+          <input type="text" id="codFabricante" placeholder="Código Fabricante: ">
+              <button type="submit" id="consultarFab">Buscar Fabricante</button> 
+              <br>
+              <div id="respConsultarFab"></div> <br>
+
+
+              <label for="codEntrega">Código Entrega:</label>
+          <input type="text" id="codEntrega" placeholder="Código Entrega: ">
+              <button type="submit" id="buscarEntrega">Buscar Entrega</button> 
+              <br>
+              <div id="resBuscEntr"></div>
+              
+
+        </div>
+  
+    </div>
+
+  </div>
+
+  </div> 
+</body>
+</html>

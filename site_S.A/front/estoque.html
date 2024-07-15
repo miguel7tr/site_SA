@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="scriptEstoque.js" defer></script>
+  <script src="scriptBusca.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Estoque</title>
+  
+</head>
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<body>
+
+  <header> 
+      <br>
+      <nav>
+        <ul>
+          <li><a class="linkCad" href="cadastro.html#cadastroFuncionario">Cadastrar</a><br></li>
+          <li><a class="linkCad" href="listar.html">Listar</a><br></li>
+          <li><a class="linkCad" href="buscar.html">Buscar</a></li>
+          <li><a class="linkCad" href="apagar.html">Apagar</a></li>
+          <li><a class="linkCad" href="estoque.html#buscarEstoque">Estoque</a></li>
+        </ul>
+      </nav>
+      <br>
+    </header>
+    <br>
+
+  <div class="container" id="container">
+    <a class="links" id="paraBuscaEstoque"></a>
+    <a class="links" id="paraListarEstoque"></a>
+
+
+ 
+                    <!-- Barra lateral -->
+  <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#buscarEstoque" class="sidebar-link">Buscar</a></li>
+        <li><a href="#listarEstoque" class="sidebar-link">Listar</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+      
+  <div class="content">      
+                    <!-- Buscar Estoque -->
+
+      <div id="buscarEstoque">
+          <h1>Buscar</h1>
+
+          <p>
+            <label for="nomeProdutoList">Nome Do Produto:</label><br>
+            <input type="text" id="nomeProdutoList" placeholder="Nome Do Produto: ">
+            <button type="submit" id="buscarNomeProdut">Buscar</button> 
+            <br>
+            <div class="res" id="estoqueConsultaE"></div>
+          </p>
+
+      </div>
+    
+                    <!-- Listar Estoque -->
+      <div id="listarEstoque">
+          <h1>Listar</h1> 
+
+            <p>
+            <button type="submit" id="listarEstoques">Estoque</button> 
+            <br>
+            </p> 
+
+        <div class="res" id="estoqueListR"></div>
+            
+      </div>
+      
+    </div>
+  </div>  
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="scriptDel.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Apagar</title>
+  
+</head>
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<body>
+  <header> 
+    <br>
+    <nav>
+      <ul>
+        <li><a class="linkCad" href="cadastro.html#cadastroFuncionario">Cadastrar</a><br></li>
+        <li><a class="linkCad" href="listar.html">Listar</a><br></li>
+        <li><a class="linkCad" href="buscar.html">Buscar</a></li>
+        <li><a class="linkCad" href="apagar.html">Apagar</a></li>
+        <li><a class="linkCad" href="estoque.html#buscarEstoque">Estoque</a></li>
+
+      </ul>
+    </nav>
+    <br>
+
+  </header>
+
+  <br>
+
+  <div class="container" id="container">
+    <a class="links" id="paraCadastroFuncionario"></a>
+    <a class="links" id="paraCadastroDoador"></a>
+    <a class="links" id="paraCadastroFabricante"></a>
+    <a class="links" id="paraCadastroProduto"></a>
+
+
+
+  </div>
+    <div class="content">      
+       
+      <div class="apagarTudo">
+          <h1>Apagar</h1>
+
+          
+          <label for="codFuncionarioDel">Código Funcionário:</label>
+        <input type="text" id="codFuncionarioDel" placeholder="Código Funcionário: ">
+            <button type="submit" id="deletarFunc">Apagar Funcionário</button> 
+            <br>
+            <div id="resDelFunc"></div> <br>
+
+          
+            <label for="codDoadorDel">Código Doador:</label>
+        <input type="text" id="codDoadorDel" placeholder="Código Doador: ">
+            <button type="submit" id="deletarD">Apagar Doador</button> 
+            <br>
+            <div id="resDelDoa"></div> <br>
+
+          
+            <label for="codFabricanteDel">Código Fabricante:</label>
+        <input type="text" id="codFabricanteDel" placeholder="Código Fabricante: ">
+            <button type="submit" id="deletarFab">Apagar Fabricante</button> 
+            <br>
+            <div id="resDelFab"></div> <br>
+            
+
+        </div>
+  
+    </div> 
+       
+    
+
+  </div>
+
+  </div> 
+</body>
+</html>

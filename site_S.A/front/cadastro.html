@@ -1,0 +1,244 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastro</title>
+  
+</head>
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<body>
+  <header> 
+    <br>
+    <nav>
+      <ul>
+        <li><a class="linkCad" href="cadastro.html#cadastroFuncionario">Cadastrar</a><br></li>
+        <li><a class="linkCad" href="listar.html">Listar</a><br></li>
+        <li><a class="linkCad" href="buscar.html">Buscar</a></li>
+        <li><a class="linkCad" href="apagar.html">Apagar</a></li>
+        <li><a class="linkCad" href="estoque.html#buscarEstoque">Estoque</a></li>
+      </ul>
+    </nav>
+    <br>
+
+  </header>
+
+  <br>
+
+  <div class="container" id="container">
+    <a class="links" id="paraCadastroFuncionario"></a>
+    <a class="links" id="paraCadastroDoador"></a>
+    <a class="links" id="paraCadastroFabricante"></a>
+    <a class="links" id="paraCadastroProduto"></a>
+
+
+
+                    <!-- Barra lateral -->
+  <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#cadastroFuncionario" class="sidebar-link">Funcionário</a></li>
+        <li><a href="#cadastroDoador" class="sidebar-link">Doador</a></li>
+        <li><a href="#cadastroFabricante" class="sidebar-link">Fabricante</a></li>
+        <li><a href="#cadastroProduto" class="sidebar-link">Produto</a></li>
+        <li> <a href="#cadastroEntrega" class="sidebar-link">Entregas</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+      
+    <div class="content">      
+                    <!-- Cadastro Funcionário -->
+      <div id="cadastroFuncionario">
+
+          <h1>Cadastro Funcionário</h1>
+          <p>
+            <label for="nomeFuncionario">Nome</label><br>
+            <input type="text" id="nomeFuncionario" placeholder="Nome">
+          </p> 
+
+          <p>
+            <label for="cargoFuncionario">Cargo</label><br>
+            <input type="text" id="cargoFuncionario" placeholder="Cargo">
+          </p>
+
+          <p>
+            <label for="cpfFuncionario">CPF</label><br>
+            <input type="text" id="cpfFuncionario" placeholder="CPF">
+          </p> 
+
+          <p>
+            <label for="telefoneFuncionario">Telefone</label><br>
+            <input type="text" id="telefoneFuncionario" placeholder="Telefone">
+          </p> 
+
+          <p>
+            <label for="situacaoFuncionario">Situação</label><br>
+            <input type="text" id="situacaoFuncionario" placeholder="Situação">
+          </p> 
+
+          <p> 
+            <button type="submit" id="cadastrarFunc">Cadastrar</button> 
+          </p>
+          <div id="res"></div>
+
+      </div>
+                  <!-- Cadastro Doador -->
+      <div id="cadastroDoador">
+          <h1>Cadastro Doador</h1> 
+
+          <p>
+            <label for="nomeDoador">Nome</label>
+            <input type="text" id="nomeDoador"placeholder="Nome">
+          </p>
+
+          <p>
+            <label for="cnpjDoador">CNPJ</label>
+            <input type="text" id="cnpjDoador"placeholder="CNPJ">
+          </p>
+
+          <p>
+            <label for="cpfDoador">CPF</label>
+            <input type="text" id="cpfDoador"placeholder="CPF">
+          </p>
+
+          <p>
+            <label for="enderecoDoador">Endereço</label>
+            <input type="text" id="enderecoDoador"placeholder="Endereço">
+          </p>
+
+          <p>
+            <label for="emailDoador">Email</label>
+            <input type="text" id="emailDoador" placeholder="Email">
+          </p>
+
+          <p>
+            <label for="telefoneDoador">Telefone</label>
+            <input type="text" id="telefoneDoador"placeholder="Telefone">
+          </p>
+
+          <p>
+            <label for="situacaoDoador">Situação</label>
+            <input type="text" id="situacaoDoador"placeholder="Situação">
+          </p>
+
+          <p>
+            <label for="codFuncionarioD">Código Do Funcionário</label>
+            <input type="text" id="codFuncionarioD"placeholder="Código">
+          </p>
+
+          <p> 
+            <button type="submit" id="cadastrarD">Cadastrar</button> 
+          </p>
+          <div id="res"></div>
+
+      </div>
+                    <!-- Cadastro Fabricante -->
+      <div id="cadastroFabricante">
+          <h1>Cadastro Fabricante</h1> 
+
+          <p>
+            <label for="nomeFabricante">Nome</label>
+            <input type="text" id="nomeFabricante" placeholder="Nome">
+          </p>
+          <p>
+            <label for="codFuncionarioFab">Código Do Funcionário</label>
+            <input type="text" id="codFuncionarioFab"placeholder="Código">
+          </p>
+          <p> 
+            <button type="submit" id="cadastrarFab">Cadastrar</button> 
+          </p>
+          <div id="res"></div>
+      </div>
+                    <!-- Cadastro Produto -->
+      <div id="cadastroProduto">
+
+          <h1>Cadastro Produto</h1> 
+
+          <p>
+            <label for="nomeProduto">Nome</label>
+            <input type="text" id="nomeProduto" placeholder="Nome">
+          </p>
+          <p>
+            <label for="descricaoProduto">Descrição</label>
+            <input type="text" id="descricaoProduto" placeholder="Descrição">
+          </p>
+          <p>
+            <label for="valorProduto">Valor</label>
+            <input type="text" id="valorProduto" placeholder="Valor">
+          </p>
+          <p>
+            <label for="quantidadeProduto">Quantidade</label>
+            <input type="text" id="quantidadeProduto" placeholder="Quantidade">
+          </p>
+          <p>
+            <label for="codDoadorProd">Código Doador</label>
+            <input type="text" id="codDoadorProd" placeholder="Código Doador">
+          </p>
+          <p>
+            <label for="codFabricanteProd">Código Fabricante</label>
+            <input type="text" id="codFabricanteProd" placeholder="Código Fabricante">
+          </p>
+          <p>
+            <label for="codFuncionarioProd">Código Funcionário</label>
+            <input type="text" id="codFuncionarioProd" placeholder="Código Funcionário">
+          </p>
+          <p>
+            <label for="validadeProduto">Validade</label>
+            <input class="placeValidade" type="date" id="validadeProduto" placeholder="Validade">
+          </p>  
+
+          <br>
+
+          <p> 
+            <button type="submit" id="cadastrarP">Cadastrar</button> 
+          </p>
+
+        <div id="res"></div>
+      </div>       
+                  <!-- Cadastro Entrega -->
+      <div id="cadastroEntrega">
+
+          <h1>Cadastro Entrega</h1> 
+
+          <p>
+            <label for="nomeProdutoEntrega">Nome do Produto</label>
+            <input type="text" id="nomeProdutoEntrega" placeholder="Nome">
+          </p>
+          <p>
+            <label for="dataEntrega">Data</label>
+            <input class="placeValidade" type="date" id="dataEntrega" placeholder="Data">
+          </p>
+          <p>
+            <label for="quantidadeEntrega">Quantidade</label>
+            <input type="text" id="quantidadeEntrega" placeholder="Quantidade">
+          </p>
+          <p>
+            <label for="responsavelEntrega">Responsavel</label>
+            <input type="text" id="responsavelEntrega" placeholder="Responsavel">
+          </p>
+          <p>
+          <label for="codFuncionarioEntrega">Codigo Do Funcionario</label>
+          <input type="text" id="codFuncionarioEntrega" placeholder="Codigo"><br>
+          </p>
+          <p>
+          <label for="codEstoqueEntrega">Codigo Do Estoque</label>
+          <input type="text" id="codEstoqueEntrega" placeholder="Codigo">
+         </p>
+          <p> 
+            <button type="submit" id="cadastrarEntregas">Cadastrar</button> 
+          </p>
+
+
+        <div id="res"></div>
+
+      </div>  
+    </div>
+
+  </div> 
+</body>
+</html>

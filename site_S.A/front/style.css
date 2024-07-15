@@ -1,0 +1,513 @@
+/* ---------------------------------------
+                 Style
+--------------------------------------- */
+
+
+
+/* CSS reset */
+*, *:before, *:after { 
+  margin:0;
+  padding:0;
+  font-family: Arial,sans-serif;
+}
+
+
+
+/* ---------------------------------------
+                 Header
+--------------------------------------- */
+
+
+header{   
+  background: linear-gradient( rgb(77, 192, 144),rgb(55, 185, 131),rgb(55, 160, 116));
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+} 
+
+header nav li{
+  margin: 8px;
+  margin-top: 16px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav a:hover{
+  color: #ccc;
+}
+
+header h2{
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+
+nav {
+  display: flex;
+  }
+
+@media (max-width: 794px) {
+  nav {
+    flex-direction: column;
+  }
+  .content{
+    flex-direction: column;
+  }
+}
+
+
+/* ---------------------------------------
+                  Body
+--------------------------------------- */
+
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: #e1ece4;
+  text-align: left;
+}
+
+/* ----- Barra lateral ----- */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 160px;
+  height: 100vh;
+  background-color: #333;
+  border-right: 1px solid #444;
+  padding: 20px;
+  transition: width 0.2s ease;
+  animation: slideIn 0.3s forwards 0.3s;
+}
+
+.sidebar-nav {
+  list-style: none;
+}
+
+.sidebar-nav li {
+  margin-bottom: 25px;
+}
+
+.sidebar-nav li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-nav a.sidebar-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.sidebar-nav a.sidebar-link:hover {
+  color: #ccc;
+}
+
+.sidebar-nav a.sidebar-link::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+  
+/* Evitando interferência */
+.sidebar,.sidebar-nav,.sidebar-nav ul,.sidebar-nav li,.sidebar-nav a.sidebar-link {
+  box-sizing: content-box;
+}
+
+/*----- Caixa de cadastro -----*/
+
+.listarTudo, .buscarTudo, .apagarTudo,#cadastroFabricante, #cadastroFuncionario, #cadastroDoador, #cadastroProduto, #cadastroEntrega, #buscarEstoque, #listarEstoque{
+  position: absolute;
+  top: 0px;
+  width: 88%;   
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: #f7f7f7;
+  border: 1px solid rgba(147, 184, 189,0.8);
+   
+  -webkit-box-shadow: 5px;
+  border-radius: 5px;
+   
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+ 
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+} 
+
+.content{
+  width: 500px;
+  min-height: 560px;    
+  margin: 0px auto;
+  position: relative;   
+}
+
+.content p:first-child{
+  margin: 0px;
+}
+
+/*----- Título das caixas de cadastro -----*/
+
+h2{
+  font-size: 21px;
+  color: rgba(77, 192, 144);
+  padding: 2px 0 10px 0;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h1{
+  font-size: 48px;
+  color: rgba(77, 192, 144);
+  padding: 2px 0 10px 0;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h1:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(77, 192, 144) 20%,rgba(77, 192, 144) 53%,rgba(77, 192, 144) 79%,rgba(147,184,189,0) 100%); 
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+
+/*----- Campos das caixas -----*/
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #405c60;
+  position: relative;
+}
+
+label + input[type="text"], label + button{
+  margin-top: 10px;
+}
+
+/* Input */
+
+input {
+  outline: none;
+}
+
+input:not([type="checkbox"]){
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px;    
+  border: 1px solid #b2b2b2;
+   
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+   
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+   
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+input[type="text"]{
+  padding: 10px;
+  width: 415px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="date"]{
+  padding: 10px;
+  width: 415px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.placeValidade{
+  color: rgba(0, 0, 0, 0.32 ); /* Opacidade de 50% */
+}
+
+/* Link */
+
+.link{
+  position: absolute;
+  background: #fff;
+  color: #ccc;
+  left: 0px;
+  height: 20px;
+  width: 440px;
+  padding: 17px 30px 20px 30px;
+  font-size: 16px;
+  text-align: right;
+  border-top: 1px solid #dbe5e8;
+ 
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
+}
+ 
+.link a {
+  font-weight: bold;
+  background: #f7f8f1;
+  padding: 6px;
+  color: rgb(29, 162, 193);
+  margin-left: 10px;
+  font-size: 40px;  
+
+ 
+  -webkit-border-radius: 4px;
+  border-radius: 4px;  
+ 
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s  linear;
+}
+
+  .linkCad {
+    font-weight: bolder;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .linkCad:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+ 
+.link a:hover {
+  color: #39bfd7;
+  background: #f7f7f7;
+  border: 1px solid #4ab3c6;
+}
+
+.linkCadastros {
+  text-decoration: none;
+  color: #333;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* <p> & <a> */
+
+a{
+  text-decoration: none;
+}
+
+a.links{
+  display: none;
+}
+
+p{
+  margin-bottom:15px;
+}
+p.linkCadastros{
+  background-color: rgb(77, 192, 144);
+  
+}
+
+/* Placeholder */
+
+::-webkit-input-placeholder{
+  color: #bebcbc; 
+  font-style: italic;
+}
+
+/* Botões */
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button[type="submit"]{
+  width: 100%!important;
+  cursor: pointer;  
+  /* background: -webkit-linear-gradient(left, rgb(144, 231, 144) 0%, rgb(144, 231, 144) 20%, rgb(144, 231, 144) 53%, rgb(144, 231, 144) 79%, rgb(144, 231, 144) 100%); */
+  /* background: linear-gradient( rgb(77, 192, 144),rgb(55, 185, 131),rgb(55, 160, 116)); */
+  background: -webkit-linear-gradient(top,rgb(33, 231, 149), rgb(21, 182, 115), rgb(13, 151, 94));
+  padding: 8px 5px;
+  color: #ffffff;
+  font-size: 20px;  
+  border: 1px solid #fff;   
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+   
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+   
+  transition: all 0.2s linear;
+}
+
+button[type="submit"]:hover{
+  background: rgb(26, 163, 106);
+  color: white
+}
+
+
+/* Troca entre cadastros */
+
+.listarTudo, .buscarTudo, .apagarTudo, #cadastroFabricante, #cadastroFuncionario, #cadastroDoador, #cadastroProduto, #cadastroEntrega, #buscarEstoque, #listarEstoque {
+  display: none;
+}
+  
+.listarTudo, .buscarTudo, .apagarTudo,#cadastroFabricante:target,#cadastroFuncionario:target,#cadastroDoador:target,#cadastroProduto:target, #cadastroEntrega:target, #cadastroEntrega:target,  #buscarEstoque:target, #listarEstoque:target{
+  display: block;
+}
+
+
+/* Div */
+
+.res{
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.listarTudo div {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.buscarTudo div {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.apagarTudo div {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* ---------------------------------------
+                 Footer
+--------------------------------------- */
+
+
+footer {
+  background: linear-gradient( rgb(77, 192, 144),rgb(55, 185, 131),rgb(55, 160, 116));
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+
+/* ---------------------------------------
+               Animações
+--------------------------------------- */
+
+@keyframes slideIn {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* ---------------------------------------
+                  Botao Inicial (teste)
+--------------------------------------- */
+
+.telaInicial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-weight: normal;
+
+}
+
+.coluna {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.linkIndex {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.linkIndex:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
